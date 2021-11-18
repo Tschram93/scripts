@@ -10,14 +10,16 @@ if [ -z "$repo" ] || [ -z "$file" ]; then
     exit 1
 fi
 
+
+
 git init;
-git add .;
 git branch -M main;
+git add .;
+git commit -m "first commit"
 git status;
 
 
 
-    git commit -m "first commit"
     git remote add origin https://github.com/Tschram93/"$repo".git
     git push -u origin main
     
