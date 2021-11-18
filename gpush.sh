@@ -10,7 +10,6 @@ if [ -z "$repo" ] || [ -z "$file" ]; then
     exit 1
 fi
 
-git status;
 git add .;
 git status;
 
